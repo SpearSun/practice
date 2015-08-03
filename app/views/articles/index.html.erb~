@@ -1,4 +1,4 @@
-<%= render partial: "common/header" %>
+<% render partial: "common/header" %>
 
 <h1>Listing articles</h1>
 
