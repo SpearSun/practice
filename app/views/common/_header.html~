@@ -1,28 +1,27 @@
 
 <head>
-			<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 	
-<title>JUST - Room325</title>
-
-<!--link rel="stylesheet" type="text/css" media="screen" href="header.css" /-->
-
-
+  # => <link href="/assets/common/header.css" media="screen" rel="stylesheet" />
+  stylesheet_link_tag "common/header"
+	<title>JUST - Room325</title>
 </head>
 
-
-
+<html>
+<body>
 <div id="header">
 
- 	 <div id="logo"> 	 <div id="logo">
- 	   <h4>JUST - Room325</h4>
- 	 </div>
- 	 </div>
-  			<div id="topmenu">
-			<a href="#">Home</a> | 
-			<a href="#">About Us </a>| 
-			<a href="#">News</a> | 
-			<a href="#">Contact</a> | 
-			<a href="#">Links</a>
-			</div>
-</div>
+ 	<div id="logo">
+ 	  <h1>JUST - Room325</h1>
+ 	</div>
 
+  <div id="topmenu">
+		<a href="#">Home</a> | 
+		<a href="#">About Us </a>| 
+		<a href="#">News</a> | 
+		<a href="#">Contact</a> | 
+		<a href="#">Links</a>
+	</div>
+</div>
+</body>
+</html>
