@@ -17,16 +17,16 @@
 html, body {
 	margin: 0; padding: 0;
 	text-align: center;
-	
 	width: 760px;
 	text-align: left;
 	margin: auto;
 }
 
 #content {
-	background-color: #999;
+	background-color: #CCC;
 	margin-top: 40px;
 	padding-bottom: 40px;
+  min-height: 3000;
 }
 
 #maintext {
@@ -50,4 +50,79 @@ html, body {
 	
 }
 
+#rightcol {
+	width: 168px;
+	position: absolute;
+	top: 136px;
+	margin-left: 566px;
+	background: url(images/right_bg.gif) no-repeat;
+  font-weight: bold;
+}
 
+#introduction{
+	float:right;
+	width:150px;
+	padding: 8px 8px 8px 8px;
+	margin:auto;
+	
+	text-align:center;
+	line-height:1.5em;
+	color:#ffffff;
+	font-size:0.8em;
+	font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+	letter-spacing:0px;
+  font-weight: bold;
+}
+#introduction ul, #introduction li {
+	text-align:center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#introduction  a{
+	text-decoration:none;
+	color:#ffffff;
+	border-bottom: none;
+}
+
+#introduction a:hover{
+	color:#ffffff;
+	background-color:#999999;
+	
+}
+
+#introduction h3{
+	text-align: center;
+	position:static;
+}
+
+#footer 
+{
+	width: 100%;
+	height: 40px;
+	clear: both;
+	padding-top: 0px;
+	text-align: center;
+	border-top: 1px solid #C6D4E6;
+	color: #000000;
+	font-size: 0.75em;
+	background-color: #666666;
+  bottom: 0;
+}
+
+#footer a {
+	color: #888888;
+	text-decoration:none;
+}
+
+#footer p {color: #FFFFFF;}
+
+blockquote 
+{	
+	border-left: 4px #666 solid;
+	padding:  0 0 0 10px;
+	margin: 10px 20px 10px 20px;
+	letter-spacing: 0px;
+	white-space:inherit;
+}
