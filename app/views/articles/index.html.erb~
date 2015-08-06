@@ -1,3 +1,5 @@
+
+
 <%= render partial: "common/header" %>
 
 <div id="content">
@@ -6,6 +8,11 @@
 
 		<%= link_to 'New article', new_article_path %>
 
+    <% @articles.each do |article| %>
+        <h2><%= article.title %></h2>
+        <p><%= article.text %></p>
+      <% end %>
+
 		<table>
   		<tr>
   		  <th>Title</th>
@@ -13,10 +20,7 @@
   		  <th colspan="3"></th>
   		</tr>
 
-      <% @articles.each do |article| %>
-        <h2><%= article.title %></h2>
-        <p><%= article.text %></p>
-      <% end %>
+      
 
   		<% @articles.each do |article| %>
   		  <tr>
@@ -31,15 +35,12 @@
 
     <div id="rightcol">
       <div id="introduction">
-        <h3>Menu</h3>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">News</a></li><br>
-					  <br>
-				</ul>
+				<table>
+					<tr><td align="left">Sign In</td></tr>
+          <tr><td>Username:</td><td><input type="text" name="Username" size=3 /></td></tr>
+          <tr><td>Password:</td><td><input type="text" name="Password" size=3 /></td></tr>
+					<tr><td><button type="submit" name="Logon"></td><td align="right"><a href="#">Sign Up</a></li></td></tr>
+				</table>
         <h3>Latest photos</h3>
 				<a href=""><img src="img/Nautica04.jpg" width="132" height="115" /></a></br></br>
 				<a href=""><img src="img/pic2.jpg" width="132" height="93" /></a></br></br>

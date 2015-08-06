@@ -16,8 +16,6 @@
 
 html, body {
 	margin: 0; padding: 0;
-	text-align: center;
-	width: 760px;
 	text-align: left;
 	margin: auto;
 }
@@ -26,13 +24,19 @@ html, body {
 	background-color: #CCC;
 	margin-top: 40px;
 	padding-bottom: 40px;
-  min-height: 3000;
+  width: 760px;
+  height: auto;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #maintext {
   font: .95em/1.6em Arial, Helvetica, sans-serif;
 	color: #333;
 	width: 520px;
+  height: auto;
+  overflow: auto;
 	margin-left: 20px;
 	text-align:justify;
 	padding-top: 10px;
@@ -40,7 +44,7 @@ html, body {
 
 #maintext a{
 	text-decoration:none;
-	color:#ffffff;
+	color: #333333;
 	border-bottom:1px solid #ffffff;
 }
 
