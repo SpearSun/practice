@@ -24,7 +24,7 @@ html, body {
 	background-color: #CCC;
 	margin-top: 40px;
 	padding-bottom: 40px;
-  width: 760px;
+  width: 750px;
   height: auto;
   overflow: auto;
   margin-left: auto;
@@ -55,10 +55,10 @@ html, body {
 }
 
 #rightcol {
-	width: 168px;
-	position: absolute;
-	top: 136px;
-	margin-left: 566px;
+	width: 160px;
+	/*position: relative;*/
+  padding-top: 10px;
+	margin-left: 560px;
 	background: url(images/right_bg.gif) no-repeat;
   font-weight: bold;
 }

@@ -32,6 +32,8 @@
   		  </tr>
   		<% end %>
 		</table>
+	</div>
+
 
     <div id="rightcol">
       <div id="introduction">
@@ -39,7 +41,7 @@
 					<tr><td align="left">Sign In</td></tr>
           <tr><td>Username:</td><td><input type="text" name="Username" size=3 /></td></tr>
           <tr><td>Password:</td><td><input type="text" name="Password" size=3 /></td></tr>
-					<tr><td><button type="submit">Logon</button></td><td align="right"><a href="#">Sign Up</a></li></td></tr>
+					<tr><td><button type="submit">Logon</button></td><td align="right"><%=link_to 'Sign Up', new_user_path %></li></td></tr>
 				</table>
         <h3>Latest photos</h3>
 				<a href=""><img src="img/Nautica04.jpg" width="132" height="115" /></a></br></br>
@@ -55,9 +57,9 @@
       </div>
     </div>
 
-	</div>
 
 </div>
+
 
 <div id="footer">
   <p>&copy; 2015 Room325</p>
