@@ -33,16 +33,24 @@
   		<% end %>
 		</table>
 	</div>
-</div>
+
+
 
     <div id="rightcol">
-      <div id="introduction">
-				<table>
-					<tr><td align="left">Sign In</td></tr>
-          <tr><td>Username:</td><td><input type="text" name="Username" size=3 /></td></tr>
-          <tr><td>Password:</td><td><input type="text" name="Password" size=3 /></td></tr>
-					<tr><td><button type="submit">Logon</button></td><td align="right"><%=link_to 'Sign Up', new_user_path %></li></td></tr>
-				</table>
+      <div id="side_login">
+        <%= form_tag do %>
+        <table>
+				  <tr><td>Sign In<br/></td></tr>
+          <tr><td><%= label_tag "Username: " %></td>
+          <td><%= text_field_tag :name, params[:name], size: 7 %></td></tr>
+          <tr><td><%= label_tag "Password: " %></td>
+          <td><%= password_field_tag :password, params[:password], size: 7 %><br/></td></tr>
+          <tr><td><%= submit_tag "Sign In" %></td><td align="right"><%=link_to 'Sign Up', new_user_path %></td></tr>
+        </table>
+        <% end %>
+
+      </div>
+
         <h3>Latest photos</h3>
 				<a href=""><img src="img/Nautica04.jpg" width="132" height="115" /></a></br></br>
 				<a href=""><img src="img/pic2.jpg" width="132" height="93" /></a></br></br>
@@ -54,10 +62,10 @@
 					<li><a href="#">June 24, 2006</a></li>
 				</ul>
 			  </br></br></br></br>
-      </div>
+      
     </div>
 
-
+</div>
 
 
 

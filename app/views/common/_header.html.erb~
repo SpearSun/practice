@@ -8,16 +8,12 @@
 
 <div id="header">
 
- 	<div id="logo">
- 	  <h1>JUST - Room325</h1>
- 	</div>
-
-  <div id="topmenu">
-		<a href="#">Home</a> | 
-		<a href="#">About Us </a>| 
-		<a href="#">News</a> | 
-		<a href="#">Contact</a> | 
-		<a href="#">Links</a>
+  <div id="top_nav_info">
+		Home | 
+		About Us | 
+		News | 
+		Contact | 
+		Links 
 	</div>
 </div>
 

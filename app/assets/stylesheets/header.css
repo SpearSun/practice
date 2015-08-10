@@ -1,10 +1,10 @@
 
 #header{
-	width: 760px;
-	height: 83px;
+	width: auto;
+	height: 21px;
 	text-align: left;
 	margin: auto;
-  background: #fff url(images/bg_grad.gif) no-repeat center top;
+  background: #f00; /* url(images/bg_grad.gif) no-repeat center top;*/
 }
 	
 #logo{
@@ -21,7 +21,20 @@
 	font-weight:normal;
 }
 
-#topmenu{
+#top_nav_info{
+  width: 400px;
+  font-size: 1em;
+  color: #fff;
+  font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+  font-weight: bold;
+}
+
+#top_nav_info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#top_reg{
 	width: 400px;
 	top: 0px;
 	margin-left: 320px;

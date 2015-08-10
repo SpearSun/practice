@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.find_by(name:'sunajiu')
   end
 
   def create

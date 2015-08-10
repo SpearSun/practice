@@ -21,12 +21,13 @@ html, body {
 }
 
 #content {
-	background-color: #CCC;
+	/*background-color: #CCC;*/
 	margin-top: 40px;
 	padding-bottom: 40px;
-  width: 750px;
+  width: 950px;
   height: auto;
   overflow: auto;
+  margin-left: 30;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,12 +35,12 @@ html, body {
 #maintext {
   font: .95em/1.6em Arial, Helvetica, sans-serif;
 	color: #333;
-	width: 520px;
-  height: auto;
-  overflow: auto;
-	margin-left: 20px;
 	text-align:justify;
 	padding-top: 10px;
+  /*display: inline;*/
+  width: 70%;
+  float: left;
+  /*background-color: red;  */
 } 
 
 #maintext a{
@@ -55,14 +56,23 @@ html, body {
 }
 
 #rightcol {
-	width: 160px;
-	/*position: relative;*/
-  padding-top: 10px;
-	margin-left: 560px;
-	background: url(images/right_bg.gif) no-repeat;
-  font-weight: bold;
+  width: 25%;
+  float: right;
+  font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
+	/*background: url(images/right_bg.gif) no-repeat;*/
+  /*display: inline;*/
+  /*font-weight: bold;*/
+  /*background-color: green;*/
 }
 
+#side_login {
+  background-color: #FFF0F5;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/*
 #introduction{
 	float:right;
 	width:150px;
@@ -100,6 +110,7 @@ html, body {
 	text-align: center;
 	position:static;
 }
+*/
 
 #footer 
 {
