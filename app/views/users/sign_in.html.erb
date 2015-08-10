@@ -1,0 +1,5 @@
+<%= @name %>
+<%= @password %>
+<br/>
+<% @login_stat = User.exists?(name: @name, password: @password) %>
+<%= @login_stat %>

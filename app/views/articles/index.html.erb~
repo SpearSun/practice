@@ -38,7 +38,7 @@
 
     <div id="rightcol">
       <div id="side_login">
-        <%= form_tag do %>
+        <%= form_tag 'user/sign_in' do %>
         <table>
 				  <tr><td>Sign In<br/></td></tr>
           <tr><td><%= label_tag "Username: " %></td>

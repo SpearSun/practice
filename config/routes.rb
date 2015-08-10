@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/index'
-
-  get 'users/new'
-
-  get 'users/create'
-
+  # get 'users/index'
+  # get 'users/new'
+  # get 'users/create'
   get 'welcome/index'
+
+  post 'users/sign_in'
 
   resources :users
   resources :articles do
