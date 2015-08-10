@@ -17,8 +17,14 @@ class UsersController < ApplicationController
   end
 
   def sign_in
-    @name = params[:name]
-    @password = params[:password]
+    name = params[:name]
+    password = params[:password]
+    session.clear
+    if User.exists?(name:name, password:password)
+      session[:login] = true
+      session[:user] = name
+      # redirect_to @user
+    end
   end
   private
     def user_params

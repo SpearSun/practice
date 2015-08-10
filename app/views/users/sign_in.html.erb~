@@ -1,0 +1,10 @@
+<%= render partial: "common/header" %>
+<%= @name %>
+<%= @password %>
+<br/>
+<% @login_stat = User.exists?(name: @name, password: @password) %>
+<br/>
+<%= @login_stat %>
+
+Login
+<%= session[:login] %>

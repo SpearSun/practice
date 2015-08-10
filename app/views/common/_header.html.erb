@@ -15,5 +15,11 @@
 		Contact | 
 		Links 
 	</div>
+
+  <div id="top_login_info">
+    <% if session[:login] %>
+      <%= session[:user] %>
+    <% end %>
+  </div>
 </div>
 

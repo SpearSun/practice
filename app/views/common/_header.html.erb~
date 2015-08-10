@@ -9,11 +9,21 @@
 <div id="header">
 
   <div id="top_nav_info">
-		Home | 
+    <% if session[:login] %>
+      <%= link_to "Home", "sign_in" %>
+    <% else %>
+		  <%= link_to "Home", articles_path %>
+    <% end %> | 
 		About Us | 
 		News | 
 		Contact | 
 		Links 
 	</div>
+
+  <div id="top_login_info">
+    <% if session[:login] %>
+      <%= session[:user] %>
+    <% end %>
+  </div>
 </div>
 

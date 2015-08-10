@@ -27,6 +27,7 @@
   color: #fff;
   font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
   font-weight: bold;
+  float: left;
 }
 
 #top_nav_info a {
@@ -34,19 +35,15 @@
   text-decoration: none;
 }
 
-#top_reg{
-	width: 400px;
-	top: 0px;
-	margin-left: 320px;
-	padding-top: 43px!important;	
-	padding-right: 0px;
-	padding-left: 0px;
+#top_login_info{
+	width: 300px;
+	font-size: 1em;
+  color: #fff;
 	font-family:"Lucida Grande","Lucida Sans Unicode",arial,sans-serif;
-	font-size:1em;
-	color:#FFFFFF;
-	margin-top: 0px;
-	height: 0px;
 	font-weight: bold;
+  text-align: right;
+  padding-right: 6px;
+  float: right;
 }
 
 #topmenu a{

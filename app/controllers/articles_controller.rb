@@ -19,7 +19,11 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.all
+    # if session[:login]
+    #  redirect_to "users/sign_in"
+    # else
+      @articles = Article.all
+    # end
   end
 
   def edit
