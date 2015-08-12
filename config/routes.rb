@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   post 'users/sign_in'
+  get 'users/show'
 
   resources :users
   resources :articles do

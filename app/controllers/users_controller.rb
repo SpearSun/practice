@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  # protect_from_forgery :except => :show
+
   def index
   end
 
@@ -23,9 +25,10 @@ class UsersController < ApplicationController
     if User.exists?(name:name, password:password)
       session[:login] = true
       session[:user] = name
-      # redirect_to @user
+      # redirect_to action: :show
     end
   end
+
   private
     def user_params
       params.require(:user).permit(:name, :password, :email)

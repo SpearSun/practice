@@ -1,10 +1,39 @@
 <%= render partial: "common/header" %>
-<%= @name %>
-<%= @password %>
-<br/>
-<% @login_stat = User.exists?(name: @name, password: @password) %>
-<br/>
-<%= @login_stat %>
 
-Login
-<%= session[:login] %>
+<div id="content">
+	<div id="maintext">
+		<h2>Listing articles</h2>
+
+		<%= link_to 'New article', new_article_path %>
+
+    
+	</div>
+
+
+
+    <div id="rightcol">
+      <div id="side_login">
+        <%= form_tag 'users/sign_in' do %>
+        <table>
+				  <tr><td>Sign In<br/></td></tr>
+          <tr><td><%= label_tag "Username: " %></td>
+          <td><%= text_field_tag :name, params[:name], size: 7 %></td></tr>
+          <tr><td><%= label_tag "Password: " %></td>
+          <td><%= password_field_tag :password, params[:password], size: 7 %><br/></td></tr>
+          <tr><td><%= submit_tag "Sign In" %></td><td align="right"><%=link_to 'Sign Up', new_user_path %></td></tr>
+        </table>
+        <% end %>
+
+      </div>
+
+        
+      
+    </div>
+
+</div>
+
+
+
+<div id="footer">
+  <p>&copy; 2015 Room325</p>
+</div>

@@ -1,19 +1,15 @@
 
-<head>
+<% content_for :head do %>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 	
 	<title>JUST - Room325</title>
-</head>
+<% end %>
 
 
 <div id="header">
 
   <div id="top_nav_info">
-    <% if session[:login] %>
-      <%= link_to "Home", "sign_in" %>
-    <% else %>
-		  <%= link_to "Home", articles_path %>
-    <% end %> | 
+		<%= link_to "Home", users_sign_in_path %> | 
 		About Us | 
 		News | 
 		Contact | 
