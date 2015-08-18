@@ -1,0 +1,60 @@
+<%= render partial: "common/header" %>
+
+<div id="new_user">
+  <legend>Enter Your Details</legend>
+  
+  <%= form_for :user, url: users_path do |f| %>
+
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+            this article from being saved:</h2>
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <p>
+      <%= f.label "name*:" %>
+      <%= f.text_field :name, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "password*:" %>
+      <%= f.password_field :password, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "confirm password*:" %>
+      <%= f.password_field :password_confirmation, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "email*:" %>
+      <%= f.email_field :email, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "mobile:" %>
+      <%= f.email_field :mobile, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "gender:" %>
+      <%= f.select :gender, ["", "Male", "Female"] %>
+    </p>
+    <p>
+      <%= f.label "age:" %>
+      <%= f.select :age, [""].concat((18..100).to_a) %>
+    </p>
+    <p>
+      <%= f.label "profession:" %>
+      <%= f.email_field :profession, size: 15 %>
+    </p>
+    <p>
+      <%= f.label "address:" %>
+      <%= f.email_field :address, size: 15 %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>

@@ -6,5 +6,7 @@ class AddColumnToUsers < ActiveRecord::Migration
     add_column :users, :mobile, :integer
     add_column :users, :profession, :string
     
+    add_index :users, :name, unique: true
+    add_index :users, :email, unique: true
   end
 end

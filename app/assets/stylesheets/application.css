@@ -72,6 +72,34 @@ html, body {
   padding-bottom: 6px;
 }
 
+#new_user {
+  position: relative;
+  width: 36%;
+  margin-top: 3em;
+  margin-left: 5em;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FFF0F5;
+}
+
+legend {
+  position: absolute;
+  top: -1em;
+  left: .5em;
+  padding: .4em 1em;
+  background: maroon;
+  color: white;
+}
+
+#new_user label {
+  width: 12em;
+  float: left;
+  text-align: right;
+  margin-right: 0.2em;
+  display: block;
+}
+
 /*
 #introduction{
 	float:right;
