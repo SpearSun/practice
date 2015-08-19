@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   # get 'users/create'
   get 'welcome/index'
 
-  post 'users/sign_in'
+  post 'users/home'
+  get 'users/sign_off'
   get 'users/show'
 
   resources :users

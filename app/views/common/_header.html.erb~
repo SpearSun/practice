@@ -9,7 +9,7 @@
 <div id="header">
 
   <div id="top_nav_info">
-		<%= link_to "Home", users_sign_in_path %> | 
+		<%= link_to "Home", articles_path %> | 
 		About Us | 
 		News | 
 		Contact | 
@@ -19,6 +19,7 @@
   <div id="top_login_info">
     <% if session[:login] %>
       <%= session[:user] %>
+      <%= link_to "Log out", 'sign_off' %>
     <% end %>
   </div>
 </div>

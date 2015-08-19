@@ -19,6 +19,7 @@
   <div id="top_login_info">
     <% if session[:login] %>
       <%= session[:user] %>
+      <%= link_to "Log out", 'sign_off' %>
     <% end %>
   </div>
 </div>

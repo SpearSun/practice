@@ -5,12 +5,14 @@
 <div id="content">
 	<div id="maintext">
 		<h2>Listing articles</h2>
+    <%= session[:user] %>
 
 		<%= link_to 'New article', new_article_path %>
 
     <% @articles.each do |article| %>
         <h2><%= article.title %></h2>
         <p><%= article.text %></p>
+        <p><%= article.user_id %></p>
       <% end %>
 
 		<table>
@@ -38,7 +40,7 @@
 
     <div id="rightcol">
       <div id="side_login">
-        <%= form_tag 'users/sign_in' do %>
+        <%= form_tag 'users/home' do %>
         <table>
 				  <tr><td>Sign In<br/></td></tr>
           <tr><td><%= label_tag "Username: " %></td>

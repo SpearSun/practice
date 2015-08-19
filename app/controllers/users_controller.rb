@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
    
     if @user.save
+      name = @user.name
+      session[:login] = true
+      session[:user] = name
+      session[:user_id] = User.find_by(name:name).id
       redirect_to @user
     else
       render 'new'
@@ -22,15 +26,22 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def sign_in
+  def home
     name = params[:name]
     password = params[:password]
     session.clear
     if User.exists?(name:name, password:password)
       session[:login] = true
       session[:user] = name
+      session[:user_id] = User.find_by(name:name).id
       # redirect_to action: :show
     end
+  end
+
+  def sign_off
+    session.clear
+    @articles = Article.all
+    redirect_to 'articles/index'
   end
 
   private
