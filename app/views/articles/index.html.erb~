@@ -6,12 +6,13 @@
 	<div id="maintext">
 		<h2>Listing articles</h2>
     <%= session[:user] %>
-    <%= session[:user_id] %>
+
 		<%= link_to 'New article', new_article_path %>
 
     <% @articles.each do |article| %>
-        <h2><%= article.title %></h2>
+        <p><%= link_to article.title, article_path(article) %></p>
         <p><%= article.text %></p>
+        <p><%= article.user_id %></p>
       <% end %>
 
 		<table>
@@ -50,6 +51,10 @@
         </table>
         <% end %>
 
+      </div>
+
+      <div id="new_article">
+        <%= link_to 'New Article', new_article_path %>
       </div>
 
         <h3>Latest photos</h3>
