@@ -92,7 +92,7 @@ legend {
   color: white;
 }
 
-#label {
+#new_user label {
   width: 12em;
   float: left;
   text-align: right;

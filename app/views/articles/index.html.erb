@@ -7,9 +7,10 @@
 		<h2>Listing articles</h2>
     
     <% @articles.each do |article| %>
-        <p><%= link_to article.title, article_path(article) %></p>
+        <span id="article_title"><%= link_to article.title, article_path(article) %></span>
         <p><%= article.text %></p>
-        <p><%= article.user_id %></p>
+        <p id="article_bottom"><%= article.user_id == nil ? "Anonymous" : article.user_id %> | <%= article.updated_at %> </p>
+        <hr/>
       <% end %>
 
 		<table>

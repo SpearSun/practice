@@ -2,6 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#content {
+	/*background-color: #CCC;*/
+	margin-top: 40px;
+	padding-bottom: 40px;
+  width: 950px;
+  height: auto;
+  overflow: auto;
+  margin-left: 30;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#maintext {
+  font: .95em/1.6em Arial, Helvetica, sans-serif;
+	color: #333;
+	text-align:justify;
+	padding-top: 10px;
+  /*display: inline;*/
+  width: 70%;
+  float: left;
+  /*background-color: red;  */
+} 
+
+#maintext a{
+	text-decoration:none;
+	color: #777733;
+	border-bottom:1px solid #ffffff;
+}
+
+#maintext a:hover{
+	color:#ffffff;
+	background-color:#939FB2;
+	
+}
+
 #new_article {
   background-color: #FFF0F5;
   margin-top: 18px;
@@ -18,4 +53,26 @@
 #new_article textarea {
   width: 570px;
   height: 200px;
+}
+
+#maintext p {
+  padding-top: 0em;
+  margin: 0px;
+}
+
+#article_title {
+  font-size: 1.2em;
+}
+
+#article_bottom {
+  color: gray;
+  font-size: 1em;
+}
+
+body hr {
+  height: 1px;
+  border: none;
+  border-top: 1px solid #555555;
+  /*width: 560px;*/
+  align: center;
 }
