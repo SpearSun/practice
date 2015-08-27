@@ -24,6 +24,9 @@ class ArticlesController < ApplicationController
     #  redirect_to "users/sign_in"
     # else
       @articles = Article.all
+      @articles.each do |article|
+        article.text = article.text.slice(0, 100) + '...'
+      end
     # end
   end
 
