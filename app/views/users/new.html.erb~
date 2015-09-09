@@ -1,5 +1,32 @@
 <%= render partial: "common/header" %>
 
+<%= javascript_tag do -%>
+  function sendName() {
+    var xmlhttp;
+    if(window.XMLHttpRequest)
+    {
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("get", "#?user_name=" + getElementById("user_name").value, true);
+    xmlhttp.send();
+  }
+
+  function getName(id) {
+    user_name = document.getElementById(id).value;
+    document.getElementById(id).value = "user_name";
+    alert(document.getElementById("user_password").value);
+    alert(user_name);
+  }
+
+  function pop() {
+    document.getElementById("user_name").value = "user_name"
+  }
+<% end -%>
+<%= javascript_tag do -%>
+  pop
+<% end %>
 <div id="new_user">
   <legend>Enter Your Details</legend>
   
@@ -19,7 +46,12 @@
 
     <p>
       <%= f.label "name*:" %>
-      <%= f.text_field :name, size: 15 %>
+      <%= f.text_field :name, size: 15, onblur: "sendName()" %>
+      <%= text_field_tag :keyup %>
+      
+      <%= javascript_tag do -%>
+        $('#user_name').load('#')
+      <% end %>
     </p>
     <p>
       <%= f.label "password*:" %>
@@ -54,7 +86,7 @@
       <%= f.email_field :address, size: 15 %>
     </p>
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Create User' %>
     </p>
   <% end %>
 </div>

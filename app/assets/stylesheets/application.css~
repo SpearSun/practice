@@ -20,41 +20,6 @@ html, body {
 	margin: auto;
 }
 
-#content {
-	/*background-color: #CCC;*/
-	margin-top: 40px;
-	padding-bottom: 40px;
-  width: 950px;
-  height: auto;
-  overflow: auto;
-  margin-left: 30;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#maintext {
-  font: .95em/1.6em Arial, Helvetica, sans-serif;
-	color: #333;
-	text-align:justify;
-	padding-top: 10px;
-  /*display: inline;*/
-  width: 70%;
-  float: left;
-  /*background-color: red;  */
-} 
-
-#maintext a{
-	text-decoration:none;
-	color: #777733;
-	border-bottom:1px solid #ffffff;
-}
-
-#maintext a:hover{
-	color:#ffffff;
-	background-color:#939FB2;
-	
-}
-
 #rightcol {
   width: 25%;
   float: right;
@@ -74,7 +39,7 @@ html, body {
 
 #new_user {
   position: relative;
-  width: 36%;
+  width: 50%;
   margin-top: 3em;
   margin-left: 5em;
   padding-left: 30px;
