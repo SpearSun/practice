@@ -34,7 +34,9 @@ class UsersController < ApplicationController
     name = params[:name]
     password = params[:password]
     session.clear
-    if User.exists?(name:name, password:password)
+    user = User.find_by(name: params[:name])
+    # if User.exists?(name:name, password:password)
+    if user and user.authenticate(params[:password])
       session[:login] = true
       session[:user] = name
       session[:user_id] = User.find_by(name:name).id
