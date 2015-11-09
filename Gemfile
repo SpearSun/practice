@@ -38,6 +38,9 @@ gem 'bcrypt', '~> 3.1.10'
 # For rake doc:guides
 gem 'redcarpet', '~> 3.1.2'
 
+# Paginate gem
+gem 'kaminari'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

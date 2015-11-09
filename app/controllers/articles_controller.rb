@@ -23,7 +23,9 @@ class ArticlesController < ApplicationController
     # if session[:login]
     #  redirect_to "users/sign_in"
     # else
-      @articles = Article.all
+
+    #  @articles = Article.all
+      @articles = Article.all.page params[:page]
       @articles.each do |article|
         article.text = article.text.slice(0, 100) + '...'
       end
@@ -53,6 +55,6 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.require(:article).permit(:title, :text)
+      params.require(:article).permit(:title, :text, :page)
     end
 end
